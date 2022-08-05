@@ -1,0 +1,44 @@
+
+<!-- ¿Listo para un ejercicio que te hará romper un poco la cabeza? Usando la instrucción while, imprime todos los números pares del 1 al 100 y al final imprime la palabra "FIN".
+-->
+<meta charset="UTF-8">
+<h1> Numeros pares del 0 al Limite ingresado </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+
+    var limite = parseInt(prompt("Ingrese el limite de numeros pares "));
+    var contador = 0;
+    var numeros = 0;
+    var numerosPares = 0;
+    while(contador <= limite)
+    {
+        numeros++;
+        numerosPares = (2 * numeros);
+        if (numerosPares <= limite)
+        {
+            imprimir(numerosPares);
+        }
+
+        contador++;
+        
+    }
+    imprimir("FIN");
+</script>
+
+
+
+
+
+
+
+
+

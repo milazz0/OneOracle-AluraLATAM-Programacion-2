@@ -1,0 +1,54 @@
+
+<!-- programa para Adivinar un numero entero random -->
+<meta charset="UTF-8">
+<h1> Edad Familia </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+
+    var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia "));
+    var contador = 1;
+    var totalEdades = 0;
+
+    while(contador <= numeroMiembros)
+    {
+        
+        var nombre = prompt("Ingrese el nombre del familiar");
+        var edad = parseInt(prompt("Ingrese la edad del familiar " + nombre));
+        totalEdades = totalEdades + edad;
+        contador++;
+    }
+    
+
+    imprimir("La media de las Edades es: " + (totalEdades/numeroMiembros));
+
+
+
+/*
+    var edadPadre = 42;
+    var edadMadre = 35;
+    var edadHijo = 22;
+    var edadHija = 17;
+    var totalEdad = (edadHija + edadHijo + edadMadre + edadPadre);
+    var mediaEdad = (totalEdad / 4);
+    imprimir("La media de Edaddes es: " + mediaEdad);
+
+*/
+</script>
+
+
+
+
+
+
+
+
+

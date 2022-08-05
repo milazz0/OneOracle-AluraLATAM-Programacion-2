@@ -1,0 +1,48 @@
+
+<meta charset="UTF-8">
+<h1>Puntos Equipo Futbol</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+    var victorias = parseInt(prompt("Ingrese victorias"));
+    var empates = parseInt(prompt("Ingrese empate"));
+    //parseInt convierte formato string en entero numeros 
+    puntosTotal = victorias * 3 + empates;
+    imprimir("Total Puntos: " + puntosTotal);
+
+    if (puntosTotal > 28)
+        {
+            imprimir("El Equipo esta mejor que el año pasado");
+        }
+    if (puntosTotal == 28)
+        {
+            imprimir("El Equipo esta igual que el año pasado");
+        }
+    if (puntosTotal < 28)
+        {
+            imprimir("El Equipo esta peor que el año pasado");
+        }
+     
+var numero = 10;
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+

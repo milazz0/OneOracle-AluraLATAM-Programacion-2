@@ -1,0 +1,36 @@
+
+<!-- programa para Adivinar un numero entero random -->
+<meta charset="UTF-8">
+<h1> Mundiales FIFA </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+    var añoMundial1 = 1930;
+    var limite = parseInt(prompt("Ingrese el año limite para calcular mundiales FIFA"));
+
+    while (añoMundial1 <= limite)
+    {
+        imprimir("Hubo mundial de la FIFA en el año  " + añoMundial1);
+        añoMundial1 = añoMundial1 + 4;
+    }
+
+    alert(" Mundiales FIFA ");
+
+</script>
+
+
+
+
+
+
+
+
+

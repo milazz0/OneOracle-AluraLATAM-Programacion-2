@@ -1,0 +1,43 @@
+
+<!-- programa para Adivinar un numero entero random -->
+<meta charset="UTF-8">
+<h1> Tabla de Multiplicar </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+ 
+    var multiplicador = 1;
+    var tabla = parseInt(prompt("Ingrese el numero de la tabla de multiplicar: "));
+    var limite = parseInt(prompt("Ingrese el numero limite de la tabla de multiplicar: "));
+    imprimir(" Usando WHILE");
+
+    while (multiplicador <= limite)
+    {
+        imprimir(tabla * multiplicador);
+        multiplicador++;
+    }
+    imprimir("Usando FOR");
+    for (var multiplicador = 1;multiplicador <= limite;multiplicador++)
+    {
+        imprimir(tabla * multiplicador);
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+

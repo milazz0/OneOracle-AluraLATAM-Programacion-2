@@ -1,0 +1,53 @@
+
+<!-- programa para Adivinar un numero entero random -->
+<meta charset="UTF-8">
+<h1> Adivina el numero del 1 al 10 </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+    function calcularimc(peso,altura)
+    {
+        return (peso / (altura * altura));
+        
+    }
+    function sorteo(n) 
+    { 
+            return Math.round(Math.random()*n);
+    }   
+//    var numeroAdivinar = parseInt(prompt("Ingrese el numero a adivinar: "));
+//    var numeroAdivinar = sorteo(10);
+//    var numeroAdivinado = parseInt(prompt("Adivine el numero: "));
+    var contador = 1;
+    var intentos = 3;
+    while (contador <= intentos)
+    {
+    var numeroAdivinado = parseInt(prompt("Adivine el numero: "));
+    if (numeroAdivinado == numeroAdivinar) 
+        {
+
+                alert("***  ADIVINO  *** en el intento N°: " + contador + " El numero es: " + numeroAdivinar );
+        }
+        else  
+            {  alert("***  Fallaste *** Intento N°: "+ contador +" El Numero era: " + numeroAdivinar);
+            }
+    contador++
+    }
+
+</script>
+
+
+
+
+
+
+
+
+

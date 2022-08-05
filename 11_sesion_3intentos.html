@@ -1,0 +1,47 @@
+
+<!-- programa para Adivinar un numero entero random -->
+<meta charset="UTF-8">
+<h1> Iniciar Sesion con 3 intentos </h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+    for(var intentos =1; intentos<= 3; intentos++)
+        {
+
+        var inicioDeSesionRegistrado = "alura";
+        var contrasenhaRegistrada = "alura";
+
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) 
+            {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+            } 
+        else 
+            {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+            }
+        }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+

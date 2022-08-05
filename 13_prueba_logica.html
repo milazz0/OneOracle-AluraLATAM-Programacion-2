@@ -1,0 +1,16 @@
+<!-- ENUNCIADO
+    Carla estaba ayudando a sus colegas a prepararse para la próxima prueba de lógica de la programación. Le pidieron que resolviera la siguiente pregunta que tenía probabilidad de aparecer en la prueba: "lee del mundo HTML un texto escrito por el usuario, y con el clic de un botón muestra lo que se escribió".
+-->
+<meta charset="UTF-8">
+<br> <br> <input/> <br> <br>
+<button>Mostrar Texto Escrito</button>
+<script>
+    var input = document.querySelector("input");
+    var button = document.querySelector("button");
+    function imprimir() 
+    {
+        alert("Usted ingreso:  "+ input.value);  
+        input.value = "";          
+    }
+    button.onclick = imprimir;
+</script>

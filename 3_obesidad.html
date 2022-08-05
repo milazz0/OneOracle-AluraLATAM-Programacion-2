@@ -1,0 +1,60 @@
+
+<!-- programa para el calculo del IMC -->
+<meta charset="UTF-8">
+<h1>IMC</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+    function imprimir(frase) {
+        document.write("<big>"+frase+"</big>");
+        saltarLinea();
+    }
+
+    function calcularimc(peso,altura)
+    {
+        return (peso / (altura * altura));
+        
+    }
+    nombreInformado = prompt("informe su nombre");
+    pesoInformado = prompt(nombreInformado + " informe su peso");
+    alturaInformada = prompt(nombreInformado + " informe su altura");
+    imcCalculado = calcularimc(pesoInformado,alturaInformada);
+
+
+    //imprimir("IMC de " + nombreInformado +" es: " + imcCalculado);
+    if (imcCalculado >= 25 && imcCalculado < 30)
+    {
+        imprimir("Considerado como sobrepeso IMC:  " + imcCalculado);
+        alert("*** sobrepeso  Regule Alimentación ***");
+    }
+    if (imcCalculado > 30)
+    {
+        imprimir("Considerado OBESO IMC:  " + imcCalculado);
+        alert("***  OBESO ACUDA AL MEDICO ***");
+    }
+
+    if (imcCalculado < 18.5)
+    {
+        imprimir("Considerado Desnutrido  IMC:  " + imcCalculado);
+        alert("***  Desnutrido  ACUDA AL MEDICO ***");
+    }
+
+    if (imcCalculado >= 18.5 && imcCalculado < 25)
+    {
+        imprimir("Considerado SALUDABLE IMC: " + imcCalculado);
+    }
+
+
+</script>
+
+
+
+
+
+
+
+
+
